@@ -1,1 +1,154 @@
 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>LEG riddle</title></head>
+
+<body>
+
+<h1>LEG riddle</h1>
+
+  
+
+<h3>What has a foot but no legs?</h3>
+
+  
+
+  <style>
+
+  h3{
+
+    font-size: 20px;
+
+    }    
+
+    p {
+
+    color: red;
+
+    font-size: 20px;
+
+}
+
+    
+
+  </style>
+
+  <img src=http://cliparts101.com/files/594/26D07B650313C28065B219DEF7DBC38B/Leg_02.png>
+
+  
+
+  <p>1: Snail</p>
+
+  <p>2: caterpillar</p>
+
+  <p>Type (one) if you think the first answer is correct type (two) if you think the seconded answer is correct.</p>
+
+    
+
+<SCRIPT>
+
+function passWord() {
+
+
+
+var testV = 1;
+
+
+
+var pass1 = prompt('Please Enter Your Answer',' ');
+
+
+
+while (testV < 3) {
+
+
+
+if (!pass1) 
+
+
+
+history.go(-1);
+
+
+
+if (pass1.toLowerCase() == "one") {
+
+
+
+alert('You are correct.');
+
+
+
+
+
+break;
+
+
+
+} 
+
+
+
+testV+=1;
+
+
+
+var pass1 = 
+
+
+
+prompt('Incorrect answer please try again.',' ');
+
+
+
+}
+
+
+
+if (pass1.toLowerCase()!="password" & testV ==3) 
+
+
+
+history.go(-1);
+
+
+
+return " ";
+
+
+
+} 
+
+
+
+</SCRIPT>
+
+
+
+<CENTER>
+
+
+
+<FORM>
+
+
+
+<input type="button" value="Enter answer here" onClick="passWord()">
+
+
+
+</FORM>
+
+
+
+</CENTER>
+
+
+
+</body>
+
+</html>
