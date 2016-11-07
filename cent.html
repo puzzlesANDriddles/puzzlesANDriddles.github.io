@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>60 Cent puzzle</title></head>
+
+<body>
+
+<h1>60 Cent puzzle</h1>
+
+  
+
+<h3>I have three USA coins. They are not a quarter, nor a dime, or a penny. It adds up to 60 cents.  
+What are the coins?</h3>
+
+  
+
+  <style>
+
+  h3{
+
+    font-size: 20px;
+
+    }    
+
+    p {
+
+    color: red;
+
+    font-size: 20px;
+
+}
+
+    
+
+  </style>
+
+  <img src=http://a.abcnews.com/images/Business/GTY_stock_cash_pile_money_dollar_bills-thg-130726_16x9_992.jpg>
+
+  
+
+  <p>1: One golden coin</p>
+
+  <p>2: A 50 cent piece and 2 nickels.</p>
+
+  <p>Type (one) if you think the first answer is correct type (two) if you think the seconded answer is correct.</p>
+
+    
+
+<SCRIPT>
+
+function passWord() {
+
+
+
+var testV = 1;
+
+
+
+var pass1 = prompt('Please Enter Your Answer',' ');
+
+
+
+while (testV < 3) {
+
+
+
+if (!pass1) 
+
+
+
+history.go(-1);
+
+
+
+if (pass1.toLowerCase() == "one") {
+
+
+
+alert('You are correct.');
+
+
+
+
+
+break;
+
+
+
+} 
+
+
+
+testV+=1;
+
+
+
+var pass1 = 
+
+
+
+prompt('Incorrect answer please try again.',' ');
+
+
+
+}
+
+
+
+if (pass1.toLowerCase()!="password" & testV ==3) 
+
+
+
+history.go(-1);
+
+
+
+return " ";
+
+
+
+} 
+
+
+
+</SCRIPT>
+
+
+
+<CENTER>
+
+
+
+<FORM>
+
+
+
+<input type="button" value="Enter answer here" onClick="passWord()">
+
+
+
+</FORM>
+
+
+
+</CENTER>
+
+
+
+</body>
+
+</html>
